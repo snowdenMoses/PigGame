@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            New Dice Game
+        </title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="query.css"/>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="popup popup2"> 
+                    <h2>About Game</h2>
+                    <p class='close'>X</p>
+                    <ul>
+                    <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold"</p>
+                    <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                    <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                    <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+                    <li>The first player to score 100 or more points wins. </li>
+                    </ul>
+                    
+                </div>
+                <span class="newgame">🔄New Game</span>
+                <span class="roll">🎲Roll Dice</span>
+                <span class="hold">🤚Hold</span>
+
+                <img src="images/dice-5.png" alt="Playing dice" class="dice" />
+    
+                <div class="player player0 player-active ">
+                   <span class="playerstyle">Player 1</span>
+                   <span class="score0 score">Hello</span>
+
+                   <div class="current">
+                       <div class="current-label">CURRENT</div>
+                       <div class="current-score current0">0</div>
+                   </div>
+                </div>
+    
+                <div class="player player1">
+                    <span class="playerstyle">Player 2</span>
+                    <span class="score1 score">Hello</span>
+                    <div class="current">
+                        <div class="current-label">CURRENT</div>
+                        <div class="current-score current1">0</div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="winner_message">Hello</div>
+            </div>
+        </section>
+
+        
+    <script src="script.js"></script>
+    </body>
+</html>
