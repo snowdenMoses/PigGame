@@ -1,81 +1,19 @@
-@media only screen and (max-width:1340px) {
 
 
-    .container{
-        width: 100%;
-        background-color: rgb(243, 155, 139);
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        border-color: blanchedalmond;
-        border-width: 20px;
-        height:80vh;
-        position: relative;
-        font-size: 14;
-        display: flex;
-        overflow: hidden;
-        }
 
 
-    .current{
-        font-size: 20px;
-        font-weight: bold;
-        background-color:#bf2e34;
-        padding:1rem;
-        border-radius: 10px;
-        width:50%;
-        color:white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-        
-        
-        .current-score{
-          font-size: 18px;
-          font-weight: bold;
-          text-align: center;
-          line-height: 2;
-          }
-        
-        .current-label{
-          font-size: 18px;
-          font-weight: bold;
-          text-align: center;
-          padding: 3px;
-        }
 
-
-        .dice{
-            position: absolute;
-            left:50%;
-            top:30vh;
-            transform: translateX(-50%);
-            width:120px;
-          }
+@media only screen and (max-width:920px) {
         
 
         .player{
             display: flex;
             flex:50%;
             flex-direction: column;
-            padding: 9rem;
             align-items: center;
+            padding: 6rem;
           }
       
-      
-          .playerstyle{
-            font-size: 30px;
-            font-weight: bold;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color:rgb(201, 9, 48);
-            
-            }
-      
-            .player--winner {
-              background-color: #2f2f2f;
-            }
       
 
 
@@ -85,37 +23,22 @@
 
 
 @media only screen and (max-width:767px) {
-
-    .container{
-        width: 100%;
-        background-color: rgb(243, 155, 139);
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        height:80vh;
-        position: relative;
-        font-size: 14;
-        display: flex;
-        overflow: hidden;
-        }
-
     .current{
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 14px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         background-color:#bf2e34;
-        padding:1rem;
         border-radius: 10px;
-        width:50%;
         color:white;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        margin-top:38vh;
+        line-height: .5;
+        padding:.5rem;
         }
         
-        
         .current-score{
-          font-size: 18px;
+          font-size: 16px;
           font-weight: bold;
           text-align: center;
           line-height: 2;
@@ -155,14 +78,10 @@
             background-color: white;
             background-color: rgb(245, 232, 245);
             backdrop-filter: blur(10px);
-          
-            padding: 0.7rem 2.5rem;
             box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
             }
           
-            .hold:hover{
-              scale: 1.05;
-            }
+        
 
 
             .newgame{
@@ -188,8 +107,8 @@
             display: flex;
             flex:50%;
             flex-direction: column;
-            padding: 9rem;
             align-items: center;
+            padding: 4rem;
           }
       
       
@@ -226,6 +145,15 @@
                   transform: translate(-50%, 3px);
                   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
                 }
+
+                .section {
+                    width:80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                  }
             
             .score{
                 display: flex;
@@ -236,6 +164,171 @@
                 align-items: center;
                 font-weight: bold;
                 color:rgb(201, 9, 48);
+                position: absolute;
+                top:20vh
+              }
+          
+
+
+}
+
+
+@media only screen and (max-width:618px) {
+        
+
+    .player{
+        display: flex;
+        flex:50%;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+      }
+  
+  
+
+
+}
+
+
+
+@media only screen and (max-width:550px) {
+
+ 
+
+
+    .current{
+        font-size: 14px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color:#bf2e34;
+        border-radius: 10px;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top:40vh;
+        line-height: .5;
+        padding:.5rem;
+        }
+        
+        .current-score{
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 2;
+          }
+        
+        .current-label{
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center;
+          padding: 10px;
+        }
+
+        .dice{
+            position: absolute;
+            left:50%;
+            top:30vh;
+            transform: translateX(-50%);
+            width:70px;
+          }
+
+
+
+        .hold{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 15px;
+            top:63vh;
+            cursor: pointer;
+            transition:0.2s;
+            background-color: white;
+            }
+          
+            .hold:hover{
+              scale: 1.05;
+            }
+
+
+            .newgame{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 16px;
+                font-weight: bold;
+                background-color: rgb(245, 232, 245);
+                margin-top: 20px;
+                padding:10px;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: 0.2s;
+                }
+              
+                .newgame:hover{
+                  scale: 1.05;
+                }
+        
+
+        .player{
+            display: flex;
+            flex:50%;
+            flex-direction: column;
+            padding: 3rem;
+            align-items: center;
+          }
+      
+      
+          .playerstyle{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:rgb(201, 9, 48);
+            position: absolute;
+            top: 15vh;
+            
+            }
+      
+            .player--winner {
+              background-color: #2f2f2f;
+            }
+      
+
+            .roll{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 16px;
+                font-weight: bold;
+                background-color: rgb(245, 232, 245);
+                margin-top: 20px;
+                padding:10px;
+                border-radius: 15px;
+                top:55vh;
+                cursor: pointer;
+                transition: all 0.2s;
+                }
+            
+            
+                .roll:active {
+                  transform: translate(-50%, 3px);
+                  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+                }
+            
+            .score{
+                display: flex;
+                flex:50%;
+                flex-direction: column;
+                padding: 10px;
+                font-size: 16px;
+                align-items: center;
+                font-weight: bold;
+                color:rgb(201, 9, 48);
+                position: absolute;
+                top:20vh;
+    }
               }
           
 
